@@ -1,0 +1,112 @@
+
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+h2{
+    color: hsl(0, 0%, 95%);
+    font-size: 2em;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button{
+    font-size: 14px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 30px;
+    border-radius: 50px;
+    border-color: transparent;
+}
+
+img{
+    padding: 15px 0;
+}
+
+p{
+    padding: 25px 0;
+}
+
+.app{
+    display: flex;
+    padding: 50px;
+}
+
+.sedan-container{
+    background-color: hsl(31, 75%, 52%);
+}
+
+.sedan__button{
+    color: hsl(31, 75%, 52%);
+}
+
+.sedan__button:active{
+    color: hsl(0, 100%, 100%);
+    background-color: hsl(31, 75%, 52%);
+    border: 1px solid #fff;
+    
+}
+
+.suvs-container{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs__button{
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs__button:active{
+    color: hsl(0, 100%, 100%);
+    background-color: hsl(184, 100%, 22%);
+    border: 1px solid #fff;
+}
+
+.luxury-container{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury__button{
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury__button:active{
+    color: hsl(0, 100%, 100%);
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid #fff;
+}
+
+.sedan-container, .suvs-container, .luxury-container{
+    padding: 50px;
+}
+
+.sedan-container{
+    border-radius: 10px 0 0 10px;
+}
+
+.luxury-container{
+    border-radius: 0 10px 10px 0;
+}
+
+@media screen and (min-width:375px) and (max-width:1220px){
+    .app{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .sedan-container{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .suvs-container{
+        max-width: 933px;
+    }
+
+    .luxury-container{
+        border-radius: 0 0 10px 10px;
+    }
+}
