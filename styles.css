@@ -80,8 +80,8 @@ p{
 }
 
 .sedan-container, .suvs-container, .luxury-container{
-    width: 13em;
-    height: 24em;
+    min-width: 13em;
+    min-height: 24em;
     padding: 50px;
 }
 
@@ -93,7 +93,7 @@ p{
     border-radius: 0 10px 10px 0;
 }
 
-@media screen and (min-width:375px) and (max-width:1220px){
+@media screen and (max-width:1220px){
     .app{
         display: flex;
         flex-wrap: wrap;
